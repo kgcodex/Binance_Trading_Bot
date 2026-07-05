@@ -90,6 +90,13 @@ Places an order only at the user-specified price.
 uv run trading_bot --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 60000
 ```
 
+or if using pip
+
+```bash
+trading_bot --symbol BTCUSDT --side BUY --type MARKET --quantity 0.04
+trading_bot interactive # for interactive mode
+```
+
 ---
 
 ## Setup
@@ -109,7 +116,13 @@ If you are using `uv`:
 uv sync
 ```
 
-If you prefer `pip`, you can install from the generated environment or convert the dependencies from `pyproject.toml`.
+or if using pip
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install .
+```
 
 ---
 
